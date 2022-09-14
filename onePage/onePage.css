@@ -1,0 +1,57 @@
+body{
+    background-color: black;
+    background-image: url("assets/0backgroundFINAL.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    display:flex; 
+    justify-content: space-between;
+    width: 100%;
+}
+
+#buy{
+    background-image: url("assets/buy1.png");
+    background-size: 150px 100px;
+    width: 150px;
+    height: 75px;
+    border: 2px solid gray;
+    border-radius: 35px;
+}
+
+#buy:hover{
+    background-image: url("assets/gif/buy.gif");
+    background-size: 150px 100px;
+}
+
+#connect{
+    background-image: url("assets/connect.png");
+    background-size: 200px 100px;
+    width: 200px;
+    height: 100px;
+}
+
+#connect:hover{
+    background-image: url("assets/gif/connect.gif");
+    background-size: 200px 100px;
+}
+
+#sign{
+    background-image: url("assets/sign1.png");
+    background-size: 300px 100px;
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    right:0px;
+    bottom: 0px;
+}
+
+#sign:hover{
+    background-image: url("assets/gif/sign.gif");
+    background-size: 300px 100px;
+}
+
