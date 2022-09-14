@@ -1,9 +1,9 @@
 function estValide(button) {
-    return button.innerHTML.length == 0;
+  return button.innerHTML.length == 0;
   }
   
-  function setSymbol(btn, symbole) {
-    btn.insertAdjacentHTML('afterbegin',symbole);
+  function setSymbol(btn, symbole,) {
+    btn.classList.add(symbole);
   }
   
   function rechercherVainqueur(pions, joueurs, tour) {
@@ -117,7 +117,7 @@ function estValide(button) {
   function main() {
     var pions = document.querySelectorAll("#Jeu button");
     var joueurs = ["X", "O"];
-    var iconejoueur = ['<img src="Xoxo_X.png">', '<img src="Xoxo_0.png">'];
+    var iconejoueur = ['croix','rond'];
     var tour = 0;
     var jeuEstFini = false;
     var afficheur = new Afficheur(document.querySelector("#StatutJeu"));

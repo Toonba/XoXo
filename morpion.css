@@ -1,33 +1,65 @@
 body {
     position: relative;
     background-color: black;
-    text-align: center;
+    background-image: url("0backgroundFINAL.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 
   #Jeu {
-    display: inline-block;
-    background-color: black;
-    margin: 0 auto;
+    position: absolute;
+    top: 250px;
+    left: 450px;
   }
   
   #Jeu div {
+    display: flex;
     margin: 0 auto;
-    overflow: hidden;
   }
   
-  #Jeu button {
-    width: 200px;
-    height: 200px;
-    float:left;
-    background-color: black;
+  .left{
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    border: 2px solid transparent;
+  }
+
+  .mid{
+    width: 190px;
+    height: 150px;
+    background-color: transparent;
+    border: 2px solid transparent;
+  }
+
+  .right{
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    border: 2px solid transparent;
   }
   
   #StatutJeu {
-    color: black;
-    background: #eee;
-    padding: 10px 0;
+    width:490px;
+    color: white;
+    background-color: transparent;
     text-align: center;
+    padding-top: 50px;
+    padding-left: 150px;
     font-size: 20px;
   }
   
+
+  .croix{
+    background-image: url("Xoxo_X_wobg.png");
+    background-size: 150px 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .rond{
+    background-image: url("Xoxo_0_wobg.png");
+    background-size: 150px 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
