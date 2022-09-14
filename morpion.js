@@ -1,6 +1,7 @@
 function estValide(button) {
   return button.innerHTML.length == 0;
   }
+  Un changement + un autre changement 
   
   function setSymbol(btn, symbole,) {
     btn.classList.add(symbole);
