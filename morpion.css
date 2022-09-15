@@ -15,7 +15,6 @@ body {
   
   #Jeu div {
     display: flex;
-    margin: 0 auto;
   }
   
   .left{
@@ -40,13 +39,13 @@ body {
   }
   
   #StatutJeu {
+    justify-content: center;
     width:490px;
     color: white;
     background-color: transparent;
-    text-align: center;
-    padding-top: 50px;
-    padding-left: 150px;
+    margin-top: 50px;
     font-size: 20px;
+    text-align: center;
   }
   
 
