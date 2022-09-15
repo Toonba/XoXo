@@ -69,28 +69,28 @@ body {
   }
 
   .croix2{
-    background-image: url("Xoxo_X_wobg.png");
+    background-image: url("onePage/assets/connect1.png");
     background-size: 150px 100px;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .rond2{
-    background-image: url("Xoxo_0_wobg.png");
+    background-image: url("onePage/assets/connect.png");
     background-size: 150px 100px;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .croix3{
-    background-image: url("Xoxo_X_wobg.png");
+    background-image: url("onePage/assets/buy.png");
     background-size: 150px 100px;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .rond3{
-    background-image: url("Xoxo_0_wobg.png");
+    background-image: url("onePage/assets/buy1.png");
     background-size: 150px 100px;
     background-repeat: no-repeat;
     background-position: center;
