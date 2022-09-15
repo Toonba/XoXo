@@ -12,90 +12,123 @@ function estValide(button) {
     if (
       pions[0].innerHTML == joueurs[tour] &&
       pions[1].innerHTML == joueurs[tour] &&
-      pions[2].innerHTML == joueurs[tour]
+      pions[2].innerHTML == joueurs[tour] 
     ) {
-      pions[0].style.backgroundColor = "#9ACD32";
-      pions[1].style.backgroundColor = "#9ACD32";
-      pions[2].style.backgroundColor = "#9ACD32";
-      return true;
-    }
+      document.getElementById('winingBar').style.display = "block"
+      document.getElementById('winingBar').style.top = "10%"
+   }
   
     if (
       pions[3].innerHTML == joueurs[tour] &&
       pions[4].innerHTML == joueurs[tour] &&
       pions[5].innerHTML == joueurs[tour]
-    ) {
+    ) { if (pions[3].classList.contains('croix') == true) {
       pions[3].style.backgroundColor = "#9ACD32";
-      pions [4].style.backgroundColor = "#9ACD32";
+      pions[4].style.backgroundColor = "#9ACD32";
       pions[5].style.backgroundColor = "#9ACD32";
       return true;
-    }
+    }else {
+      pions[3].style.backgroundColor = "grey";
+      pions[4].style.backgroundColor = "grey";
+      pions[5].style.backgroundColor = "grey";
+      return true;
+    } }
   
     if (
       pions[6].innerHTML == joueurs[tour] &&
       pions[7].innerHTML == joueurs[tour] &&
       pions[8].innerHTML == joueurs[tour]
-    ) {
+    ) { if (pions[6].classList.contains('croix') == true) {
       pions[6].style.backgroundColor = "#9ACD32";
       pions[7].style.backgroundColor = "#9ACD32";
       pions[8].style.backgroundColor = "#9ACD32";
       return true;
-    }
+    }else {
+      pions[6].style.backgroundColor = "grey";
+      pions[7].style.backgroundColor = "grey";
+      pions[8].style.backgroundColor = "grey";
+      return true;
+    } }
   
     if (
       pions[0].innerHTML == joueurs[tour] &&
       pions[3].innerHTML == joueurs[tour] &&
       pions[6].innerHTML == joueurs[tour]
-    ) {
+    ) { if (pions[0].classList.contains('croix') == true) {
       pions[0].style.backgroundColor = "#9ACD32";
       pions[3].style.backgroundColor = "#9ACD32";
       pions[6].style.backgroundColor = "#9ACD32";
       return true;
-    }
+    }else {
+      pions[0].style.backgroundColor = "grey";
+      pions[3].style.backgroundColor = "grey";
+      pions[6].style.backgroundColor = "grey";
+      return true;
+    } }
   
     if (
       pions[1].innerHTML == joueurs[tour] &&
       pions[4].innerHTML == joueurs[tour] &&
       pions[7].innerHTML == joueurs[tour]
-    ) {
+    ) { if (pions[1].classList.contains('croix') == true) {
       pions[1].style.backgroundColor = "#9ACD32";
       pions[4].style.backgroundColor = "#9ACD32";
       pions[7].style.backgroundColor = "#9ACD32";
       return true;
-    }
+    }else {
+      pions[1].style.backgroundColor = "grey";
+      pions[4].style.backgroundColor = "grey";
+      pions[7].style.backgroundColor = "grey";
+      return true;
+    } }
   
     if (
       pions[2].innerHTML == joueurs[tour] &&
       pions[5].innerHTML == joueurs[tour] &&
       pions[8].innerHTML == joueurs[tour]
-    ) {
+    ) { if (pions[2].classList.contains('croix') == true) {
       pions[2].style.backgroundColor = "#9ACD32";
       pions[5].style.backgroundColor = "#9ACD32";
       pions[8].style.backgroundColor = "#9ACD32";
       return true;
-    }
+    }else {
+      pions[2].style.backgroundColor = "grey";
+      pions[5].style.backgroundColor = "grey";
+      pions[8].style.backgroundColor = "grey";
+      return true;
+    } }
   
     if (
       pions[0].innerHTML == joueurs[tour] &&
       pions[4].innerHTML == joueurs[tour] &&
       pions[8].innerHTML == joueurs[tour]
-    ) {
+    ) { if (pions[0].classList.contains('croix') == true) {
       pions[0].style.backgroundColor = "#9ACD32";
       pions[4].style.backgroundColor = "#9ACD32";
       pions[8].style.backgroundColor = "#9ACD32";
       return true;
-    }
+    }else {
+      pions[0].style.backgroundColor = "grey";
+      pions[4].style.backgroundColor = "grey";
+      pions[8].style.backgroundColor = "grey";
+      return true;
+    } }
   
     if (
       pions[2].innerHTML == joueurs[tour] &&
       pions[4].innerHTML == joueurs[tour] &&
       pions[6].innerHTML == joueurs[tour]
-    ) {
+    ) { if (pions[2].classList.contains('croix') == true) {
       pions[2].style.backgroundColor = "#9ACD32";
       pions[4].style.backgroundColor = "#9ACD32";
       pions[6].style.backgroundColor = "#9ACD32";
       return true;
-    }
+    } else {
+      pions[2].style.backgroundColor = "grey";
+      pions[4].style.backgroundColor = "grey";
+      pions[6].style.backgroundColor = "grey";
+      return true;
+    } }
   }
   
   function matchNul(pions) {

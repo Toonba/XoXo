@@ -12,10 +12,20 @@ body {
     top: 250px;
     left: 450px;
   }
+
+  span{
+    display: none;
+    width: 110%;
+    height:10px;
+    background-image: url("winingBar\ .png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 10px;
+    position:absolute;
+  }
   
   #Jeu div {
     display: flex;
-    margin: 0 auto;
   }
 
   button{
