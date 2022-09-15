@@ -2,8 +2,9 @@ function estValide(button) {
   return button.innerHTML.length == 0;
   }
   
-  function setSymbol(btn, symbole,) {
+  function setSymbol(btn, symbole, string) {
     btn.classList.add(symbole);
+    btn.innerHTML = string;
   }
   
   function rechercherVainqueur(pions, joueurs, tour) {
@@ -24,7 +25,7 @@ function estValide(button) {
       pions[5].innerHTML == joueurs[tour]
     ) {
       pions[3].style.backgroundColor = "#9ACD32";
-      pions[4].style.backgroundColor = "#9ACD32";
+      pions [4].style.backgroundColor = "#9ACD32";
       pions[5].style.backgroundColor = "#9ACD32";
       return true;
     }
@@ -137,8 +138,8 @@ function estValide(button) {
               " it's still your turn!"
           );
         } else {
-          setSymbol(this, iconejoueur[tour]);
-          jeuEstFini = rechercherVainqueur(pions, iconejoueur, tour);
+          setSymbol(this, iconejoueur[tour], joueurs[tour]);
+          jeuEstFini = rechercherVainqueur(pions, joueurs, tour);
   
           if (jeuEstFini) {
             afficheur.sendMessage(
