@@ -2,9 +2,10 @@ function estValide(button) {
   return button.innerHTML.length == 0;
   }
 
-  function setSymbol(btn, symbole, string) {
+  function setSymbol(btn, symbole, string, asset) {
     btn.classList.add(symbole);
     btn.innerHTML = string;
+    btn.style.backgroundImage = asset
   }
   
   function rechercherVainqueur(pions, joueurs, tour) {
@@ -118,7 +119,9 @@ function estValide(button) {
   function main() {
     var pions = document.querySelectorAll("#Jeu button");
     var joueurs = ["X", "O"];
-    var iconejoueur = [['croix1','croix2','croix3'],['rond1','rond2','rond3']];
+    var iconejoueur = ["croix","rond"];
+    // changer les assets de choixAssets
+    let choixAssets = [["url('Xoxo_X_wobg.png')",  "url('onePage/assets/connect1.png')", "url('onePage/assets/buy.png')"], ["url('onePage/assets/connect.png')", "url('onePage/assets/buy1.png')", "url('Xoxo_0_wobg.png')"]]
     let randomNum = 0
     var tour = 0;
     var jeuEstFini = false;
@@ -139,8 +142,9 @@ function estValide(button) {
               " it's still your turn!"
           );
         } else {
+          // changer 2 pour qu'il soit égale à n-1 avec n nombre d'élément dans les sous listes de choixAssets
           randomNum = parseInt(Math.random()*(2-0+1)+0)
-          setSymbol(this, iconejoueur[tour][randomNum], joueurs[tour]);
+          setSymbol(this, iconejoueur[tour], joueurs[tour], choixAssets[tour][randomNum]);
           jeuEstFini = rechercherVainqueur(pions, joueurs, tour);
   
           if (jeuEstFini) {
@@ -170,4 +174,3 @@ function estValide(button) {
   main();
   
 
-  
