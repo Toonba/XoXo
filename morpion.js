@@ -1,7 +1,7 @@
 function estValide(button) {
   return button.innerHTML.length == 0;
   }
-  
+
   function setSymbol(btn, symbole, string) {
     btn.classList.add(symbole);
     btn.innerHTML = string;
@@ -118,7 +118,8 @@ function estValide(button) {
   function main() {
     var pions = document.querySelectorAll("#Jeu button");
     var joueurs = ["X", "O"];
-    var iconejoueur = ['croix','rond'];
+    var iconejoueur = [['croix1','croix2','croix3'],['rond1','rond2','rond3']];
+    let randomNum = 0
     var tour = 0;
     var jeuEstFini = false;
     var afficheur = new Afficheur(document.querySelector("#StatutJeu"));
@@ -138,7 +139,8 @@ function estValide(button) {
               " it's still your turn!"
           );
         } else {
-          setSymbol(this, iconejoueur[tour], joueurs[tour]);
+          randomNum = parseInt(Math.random()*(2-0+1)+0)
+          setSymbol(this, iconejoueur[tour][randomNum], joueurs[tour]);
           jeuEstFini = rechercherVainqueur(pions, joueurs, tour);
   
           if (jeuEstFini) {
@@ -166,4 +168,6 @@ function estValide(button) {
   }
   
   main();
+  
+
   
