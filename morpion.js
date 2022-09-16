@@ -15,121 +15,95 @@ function estValide(button) {
       pions[2].innerHTML == joueurs[tour] 
     ) {
       document.getElementById('winingBar').style.display = "block"
-      document.getElementById('winingBar').style.top = "10%"
+      document.getElementById('winingBar').style.top = "15%"
+      return true
    }
   
     if (
       pions[3].innerHTML == joueurs[tour] &&
       pions[4].innerHTML == joueurs[tour] &&
       pions[5].innerHTML == joueurs[tour]
-    ) { if (pions[3].classList.contains('croix') == true) {
-      pions[3].style.backgroundColor = "#9ACD32";
-      pions[4].style.backgroundColor = "#9ACD32";
-      pions[5].style.backgroundColor = "#9ACD32";
-      return true;
-    }else {
-      pions[3].style.backgroundColor = "grey";
-      pions[4].style.backgroundColor = "grey";
-      pions[5].style.backgroundColor = "grey";
-      return true;
-    } }
+    ) {
+      document.getElementById('winingBar').style.display = "block"
+      document.getElementById('winingBar').style.top = "43%"
+      return true
+    } 
   
     if (
       pions[6].innerHTML == joueurs[tour] &&
       pions[7].innerHTML == joueurs[tour] &&
       pions[8].innerHTML == joueurs[tour]
-    ) { if (pions[6].classList.contains('croix') == true) {
-      pions[6].style.backgroundColor = "#9ACD32";
-      pions[7].style.backgroundColor = "#9ACD32";
-      pions[8].style.backgroundColor = "#9ACD32";
-      return true;
-    }else {
-      pions[6].style.backgroundColor = "grey";
-      pions[7].style.backgroundColor = "grey";
-      pions[8].style.backgroundColor = "grey";
-      return true;
-    } }
+    ) { 
+      document.getElementById('winingBar').style.display = "block"
+      document.getElementById('winingBar').style.top = "70%"
+      return true
+    } 
   
     if (
       pions[0].innerHTML == joueurs[tour] &&
       pions[3].innerHTML == joueurs[tour] &&
       pions[6].innerHTML == joueurs[tour]
-    ) { if (pions[0].classList.contains('croix') == true) {
-      pions[0].style.backgroundColor = "#9ACD32";
-      pions[3].style.backgroundColor = "#9ACD32";
-      pions[6].style.backgroundColor = "#9ACD32";
-      return true;
-    }else {
-      pions[0].style.backgroundColor = "grey";
-      pions[3].style.backgroundColor = "grey";
-      pions[6].style.backgroundColor = "grey";
-      return true;
-    } }
+    ) { 
+      document.getElementById('winingBar').style.display = "block"
+      document.getElementById('winingBar').style.transform = "rotateZ(90deg)"
+      document.getElementById('winingBar').style.top = "50%"
+      document.getElementById('winingBar').style.left = "-30%"
+      document.getElementById('winingBar').style.width = "95%"
+      return true
+    }
   
     if (
       pions[1].innerHTML == joueurs[tour] &&
       pions[4].innerHTML == joueurs[tour] &&
       pions[7].innerHTML == joueurs[tour]
-    ) { if (pions[1].classList.contains('croix') == true) {
-      pions[1].style.backgroundColor = "#9ACD32";
-      pions[4].style.backgroundColor = "#9ACD32";
-      pions[7].style.backgroundColor = "#9ACD32";
-      return true;
-    }else {
-      pions[1].style.backgroundColor = "grey";
-      pions[4].style.backgroundColor = "grey";
-      pions[7].style.backgroundColor = "grey";
-      return true;
-    } }
+    ) { 
+      document.getElementById('winingBar').style.display = "block"
+      document.getElementById('winingBar').style.transform = "rotateZ(90deg)"
+      document.getElementById('winingBar').style.top = "50%"
+      document.getElementById('winingBar').style.left = "0%"
+      document.getElementById('winingBar').style.width = "95%"
+      return true
+     }
   
     if (
       pions[2].innerHTML == joueurs[tour] &&
       pions[5].innerHTML == joueurs[tour] &&
       pions[8].innerHTML == joueurs[tour]
-    ) { if (pions[2].classList.contains('croix') == true) {
-      pions[2].style.backgroundColor = "#9ACD32";
-      pions[5].style.backgroundColor = "#9ACD32";
-      pions[8].style.backgroundColor = "#9ACD32";
-      return true;
-    }else {
-      pions[2].style.backgroundColor = "grey";
-      pions[5].style.backgroundColor = "grey";
-      pions[8].style.backgroundColor = "grey";
-      return true;
-    } }
+    ) { 
+      document.getElementById('winingBar').style.display = "block"
+      document.getElementById('winingBar').style.transform = "rotateZ(90deg)"
+      document.getElementById('winingBar').style.top = "48%"
+      document.getElementById('winingBar').style.left = "35%"
+      document.getElementById('winingBar').style.width = "98%"
+      return true
+     }
   
     if (
       pions[0].innerHTML == joueurs[tour] &&
       pions[4].innerHTML == joueurs[tour] &&
       pions[8].innerHTML == joueurs[tour]
-    ) { if (pions[0].classList.contains('croix') == true) {
-      pions[0].style.backgroundColor = "#9ACD32";
-      pions[4].style.backgroundColor = "#9ACD32";
-      pions[8].style.backgroundColor = "#9ACD32";
-      return true;
-    }else {
-      pions[0].style.backgroundColor = "grey";
-      pions[4].style.backgroundColor = "grey";
-      pions[8].style.backgroundColor = "grey";
-      return true;
-    } }
+    ) { 
+      document.getElementById('winingBar').style.display = "block"
+      document.getElementById('winingBar').style.transform = "rotateZ(40deg)"
+      document.getElementById('winingBar').style.top = "45%"
+      document.getElementById('winingBar').style.left = "-12%"
+      document.getElementById('winingBar').style.width = "130%"
+      return true
+    }
   
     if (
       pions[2].innerHTML == joueurs[tour] &&
       pions[4].innerHTML == joueurs[tour] &&
       pions[6].innerHTML == joueurs[tour]
-    ) { if (pions[2].classList.contains('croix') == true) {
-      pions[2].style.backgroundColor = "#9ACD32";
-      pions[4].style.backgroundColor = "#9ACD32";
-      pions[6].style.backgroundColor = "#9ACD32";
-      return true;
-    } else {
-      pions[2].style.backgroundColor = "grey";
-      pions[4].style.backgroundColor = "grey";
-      pions[6].style.backgroundColor = "grey";
-      return true;
-    } }
-  }
+    ) { 
+      document.getElementById('winingBar').style.display = "block"
+      document.getElementById('winingBar').style.transform = "rotateZ(-40deg)"
+      document.getElementById('winingBar').style.top = "45%"
+      document.getElementById('winingBar').style.left = "-12%"
+      document.getElementById('winingBar').style.width = "130%"
+      return true
+    }}
+  
   
   function matchNul(pions) {
     for (var i = 0, len = pions.length; i < len; i++) {
