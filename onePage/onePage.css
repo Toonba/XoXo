@@ -19,8 +19,6 @@ header {
     background-size: 150px 100px;
     width: 150px;
     height: 75px;
-    border: 2px solid gray;
-    border-radius: 35px;
 }
 
 #buy:hover{
@@ -38,6 +36,57 @@ header {
 #connect:hover{
     background-image: url("assets/gif/connect.gif");
     background-size: 200px 100px;
+}
+
+nav{
+    width: 150px;
+    height: 150px;
+    position:absolute;
+    top:10%;
+    left:0;
+    display: none;
+}
+
+li{
+    list-style: none;
+    width:150px;
+    height: 50px;
+}
+
+#joe{
+    background-image: url("assets/buy.png");
+    background-size:150px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#campfire{
+    background-image: url("assets/buy.png");
+    background-size:150px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#kalao{
+    background-image: url("assets/buy.png");
+    background-size:150px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+a{
+    color: transparent;
+    font-size: 78px
+
+}
+
+#play{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-60%,-50%);
+    background-color: aquamarine;
+    width: 300px;
+    height: 150px;
+
 }
 
 #sign{
