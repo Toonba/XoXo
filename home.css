@@ -1,0 +1,45 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Ubuntu, sans-serif;
+  }
+  
+  body {
+    list-style: none;
+    background-color: #000 !important;
+  }
+  
+  /* Modification class bootsrap 4 pour w & h */
+  @media (min-width: 992px) {
+    .w-lg-25 {
+      width: 25% !important;
+    }
+  
+    .w-lg-50 {
+      width: 50% !important;
+    }
+  
+    .w-lg-75 {
+      width: 75% !important;
+    }
+  
+    .w-lg-100 {
+      width: 100% !important;
+    }
+  }
+  @media (min-width: 768px) {
+    .w-md-25 {
+      width: 25% !important;
+    }
+  
+    .w-md-50 {
+      width: 50% !important;
+    }
+  
+    .w-md-75 {
+      width: 75% !important;
+    }
+  
+    .w-md-100 {
+      width: 100% !important;
+    }
+  }
