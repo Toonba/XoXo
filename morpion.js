@@ -15,7 +15,7 @@ function estValide(button) {
       pions[2].innerHTML == joueurs[tour] 
     ) {
       document.getElementById('winingBar').style.display = "block"
-      document.getElementById('winingBar').style.top = "15%"
+      document.getElementById('winingBar').style.top = "5%"
       return true
    }
   
@@ -25,7 +25,7 @@ function estValide(button) {
       pions[5].innerHTML == joueurs[tour]
     ) {
       document.getElementById('winingBar').style.display = "block"
-      document.getElementById('winingBar').style.top = "43%"
+      document.getElementById('winingBar').style.top = "25%"
       return true
     } 
   
@@ -35,7 +35,7 @@ function estValide(button) {
       pions[8].innerHTML == joueurs[tour]
     ) { 
       document.getElementById('winingBar').style.display = "block"
-      document.getElementById('winingBar').style.top = "70%"
+      document.getElementById('winingBar').style.top = "50%"
       return true
     } 
   
@@ -46,9 +46,9 @@ function estValide(button) {
     ) { 
       document.getElementById('winingBar').style.display = "block"
       document.getElementById('winingBar').style.transform = "rotateZ(90deg)"
-      document.getElementById('winingBar').style.top = "50%"
+      document.getElementById('winingBar').style.top = "30%"
       document.getElementById('winingBar').style.left = "-30%"
-      document.getElementById('winingBar').style.width = "95%"
+      document.getElementById('winingBar').style.width = "90%"
       return true
     }
   
@@ -59,9 +59,9 @@ function estValide(button) {
     ) { 
       document.getElementById('winingBar').style.display = "block"
       document.getElementById('winingBar').style.transform = "rotateZ(90deg)"
-      document.getElementById('winingBar').style.top = "50%"
+      document.getElementById('winingBar').style.top = "30%"
       document.getElementById('winingBar').style.left = "0%"
-      document.getElementById('winingBar').style.width = "95%"
+      document.getElementById('winingBar').style.width = "90%"
       return true
      }
   
@@ -72,9 +72,9 @@ function estValide(button) {
     ) { 
       document.getElementById('winingBar').style.display = "block"
       document.getElementById('winingBar').style.transform = "rotateZ(90deg)"
-      document.getElementById('winingBar').style.top = "48%"
+      document.getElementById('winingBar').style.top = "30%"
       document.getElementById('winingBar').style.left = "35%"
-      document.getElementById('winingBar').style.width = "98%"
+      document.getElementById('winingBar').style.width = "90%"
       return true
      }
   
@@ -85,9 +85,9 @@ function estValide(button) {
     ) { 
       document.getElementById('winingBar').style.display = "block"
       document.getElementById('winingBar').style.transform = "rotateZ(40deg)"
-      document.getElementById('winingBar').style.top = "45%"
+      document.getElementById('winingBar').style.top = "30%"
       document.getElementById('winingBar').style.left = "-12%"
-      document.getElementById('winingBar').style.width = "130%"
+      document.getElementById('winingBar').style.width = "120%"
       return true
     }
   
@@ -98,9 +98,9 @@ function estValide(button) {
     ) { 
       document.getElementById('winingBar').style.display = "block"
       document.getElementById('winingBar').style.transform = "rotateZ(-40deg)"
-      document.getElementById('winingBar').style.top = "45%"
+      document.getElementById('winingBar').style.top = "25%"
       document.getElementById('winingBar').style.left = "-12%"
-      document.getElementById('winingBar').style.width = "130%"
+      document.getElementById('winingBar').style.width = "120%"
       return true
     }}
   

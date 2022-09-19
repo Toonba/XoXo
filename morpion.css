@@ -1,26 +1,29 @@
 body {
-    position: relative;
-    background-color: black;
-    background-image: url("0backgroundFINAL.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: black;
+  background-image: url("0backgroundFINAL.png");
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
 }
 
-
   #Jeu {
+    width: 35vw;
+    height: 80%;
     position: absolute;
-    top: 250px;
-    left: 450px;
+    top: 30%;
+    left: 32%;
   }
 
   span{
     display: none;
-    width: 110%;
-    height:10px;
+    width: 100%;
+    height:10%;
     background-image: url("winingBar\ .png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% 10px;
+    background-size: 100% 10%;
     position:absolute;
   }
   
@@ -33,47 +36,47 @@ body {
   }
   
   .left{
-    width: 150px;
-    height: 150px;
+    width: 25%;
+    height: 17vh;
     background-color: transparent;
     border: 2px solid transparent;
   }
 
   .mid{
-    width: 190px;
-    height: 150px;
+    width: 39%;
+    height: 17vh;
     background-color: transparent;
     border: 2px solid transparent;
   }
 
   .right{
-    width: 150px;
-    height: 150px;
+    width: 30%;
+    height: 17vh;
     background-color: transparent;
     border: 2px solid transparent;
   }
   
   #StatutJeu {
     justify-content: center;
-    width:490px;
+    width:35vw;
     color: white;
     background-color: transparent;
-    margin-top: 60px;
-    font-size: 20px;
+    margin-top: 5vh;
+    font-size: 1,2em;
     text-align: center;
   }
   
 
   .croix{
     background-image: url("Xoxo_X_wobg.png");
-    background-size: 150px 100px;
+    background-size: 75% 70%;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .rond{
     background-image: url("Xoxo_0_wobg.png");
-    background-size: 150px 100px;
+    background-size: 75% 70%;
     background-repeat: no-repeat;
     background-position: center;
   }
