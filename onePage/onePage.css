@@ -12,35 +12,40 @@ header {
     display:flex; 
     justify-content: space-between;
     width: 100%;
+    height: 10vh;
 }
 
 #buy{
     background-image: url("assets/buy1.png");
-    background-size: 150px 100px;
-    width: 150px;
-    height: 75px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 10%;
+    height: 100%;
 }
 
 #buy:hover{
     background-image: url("assets/gif/buy.gif");
-    background-size: 150px 100px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 #connect{
     background-image: url("assets/connect.png");
-    background-size: 200px 100px;
-    width: 200px;
-    height: 100px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 15%;
+    height: 100%;
 }
 
 #connect:hover{
     background-image: url("assets/gif/connect.gif");
-    background-size: 200px 100px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 nav{
-    width: 150px;
-    height: 150px;
+    width: 13%;
+    height: 30vh;
     position:absolute;
     top:10%;
     left:0;
@@ -49,32 +54,36 @@ nav{
 
 li{
     list-style: none;
-    width:150px;
-    height: 50px;
+    width:100%;
+    height: 10vh;
 }
 
 #joe{
     background-image: url("assets/buy.png");
-    background-size:150px 50px;
+    background-size:100% 90%;
     background-repeat: no-repeat;
     background-position: center;
 }
 #campfire{
     background-image: url("assets/buy.png");
-    background-size:150px 50px;
+    background-size:100% 90%;
     background-repeat: no-repeat;
     background-position: center;
 }
 #kalao{
     background-image: url("assets/buy.png");
-    background-size:150px 50px;
+    background-size:100% 90%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 a{
     color: transparent;
-    font-size: 78px
+    font-size: 78px;
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    right:0;
 
 }
 
@@ -84,16 +93,17 @@ a{
     left: 50%;
     transform: translate(-60%,-50%);
     background-color: aquamarine;
-    width: 300px;
-    height: 150px;
+    width: 35%;
+    height: 20vh;
 
 }
 
 #sign{
     background-image: url("assets/sign1.png");
-    background-size: 300px 100px;
-    width: 300px;
-    height: 100px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 25%;
+    height: 10vh;
     position: absolute;
     right:0px;
     bottom: 0px;
@@ -101,6 +111,7 @@ a{
 
 #sign:hover{
     background-image: url("assets/gif/sign.gif");
-    background-size: 300px 100px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
