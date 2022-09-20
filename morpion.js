@@ -16,6 +16,7 @@ function estValide(button) {
     ) {
       document.getElementById('winingBar').style.display = "block"
       document.getElementById('winingBar').style.top = "5%"
+      document.getElementById('winingBar').style.left = "-5%"
       return true
    }
   
@@ -26,6 +27,7 @@ function estValide(button) {
     ) {
       document.getElementById('winingBar').style.display = "block"
       document.getElementById('winingBar').style.top = "25%"
+      document.getElementById('winingBar').style.left = "-5%"
       return true
     } 
   
@@ -35,7 +37,8 @@ function estValide(button) {
       pions[8].innerHTML == joueurs[tour]
     ) { 
       document.getElementById('winingBar').style.display = "block"
-      document.getElementById('winingBar').style.top = "50%"
+      document.getElementById('winingBar').style.top = "45%"
+      document.getElementById('winingBar').style.left = "-5%"
       return true
     } 
   
@@ -84,10 +87,10 @@ function estValide(button) {
       pions[8].innerHTML == joueurs[tour]
     ) { 
       document.getElementById('winingBar').style.display = "block"
-      document.getElementById('winingBar').style.transform = "rotateZ(40deg)"
-      document.getElementById('winingBar').style.top = "30%"
+      document.getElementById('winingBar').style.transform = "rotateZ(47deg)"
+      document.getElementById('winingBar').style.top = "28%"
       document.getElementById('winingBar').style.left = "-12%"
-      document.getElementById('winingBar').style.width = "120%"
+      document.getElementById('winingBar').style.width = "140%"
       return true
     }
   
@@ -97,10 +100,10 @@ function estValide(button) {
       pions[6].innerHTML == joueurs[tour]
     ) { 
       document.getElementById('winingBar').style.display = "block"
-      document.getElementById('winingBar').style.transform = "rotateZ(-40deg)"
-      document.getElementById('winingBar').style.top = "25%"
+      document.getElementById('winingBar').style.transform = "rotateZ(-47deg)"
+      document.getElementById('winingBar').style.top = "22%"
       document.getElementById('winingBar').style.left = "-12%"
-      document.getElementById('winingBar').style.width = "120%"
+      document.getElementById('winingBar').style.width = "140%"
       return true
     }}
   

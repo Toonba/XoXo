@@ -3,7 +3,7 @@ body {
   height: 100vh;
   position: relative;
   background-color: black;
-  background-image: url("0backgroundFINAL.png");
+  background-image: url('0backgroundFINAL.png');
   background-size: 100% 90%;
   background-repeat: no-repeat;
 }
@@ -18,12 +18,12 @@ body {
 
   span{
     display: none;
-    width: 100%;
+    width: 120%;
     height:10%;
-    background-image: url("winingBar\ .png");
+    background-image: url("onePage/assets/barre-rouge.gif");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% 10%;
+    background-size: 120% 300%;
     position:absolute;
   }
   
@@ -39,21 +39,21 @@ body {
     width: 25%;
     height: 17vh;
     background-color: transparent;
-    border: 2px solid transparent;
+    border: 2px solid white;
   }
 
   .mid{
     width: 39%;
     height: 17vh;
     background-color: transparent;
-    border: 2px solid transparent;
+    border: 2px solid white;
   }
 
   .right{
     width: 30%;
     height: 17vh;
     background-color: transparent;
-    border: 2px solid transparent;
+    border: 2px solid white;
   }
   
   #StatutJeu {
@@ -81,3 +81,23 @@ body {
     background-position: center;
   }
 
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 700px){
+    body {
+      background-size: 200% 90%;
+      background-position: center;
+    }
+    #Jeu{
+      width: 65vw;
+      top:35%;
+      left:16%
+    }
+    #StatutJeu{
+      width: 65vw;
+      height: 5vh;
+      font-size: 2em;
+    }
+    .mid{
+      width: 43%;
+    }
+  }
