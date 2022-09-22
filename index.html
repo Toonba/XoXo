@@ -190,7 +190,7 @@
     </div>
     <div class="container-fluid d-flex flex-column align-items-center justify-content-center img-container">
         
-        <p id="demo"></p>
+        <p id="countdown"></p>
         <img class="comming-soon" src="assets\commingSoon\coming-soon5fond-noir.gif" alt="Comming Soon">
     </div>
     
@@ -214,14 +214,14 @@
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
-      // Display the result in the element with id="demo"
-      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      // Display the result in the element with id="countdown"
+      document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
       + minutes + "m " + seconds + "s ";
     
       // If the count down is finished, write some text
       if (distance < 0) {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "WEN XOXO ??";
+        document.getElementById("countdown").innerHTML = "WEN XOXO ??";
       }
     }, 1000);
 </script>
