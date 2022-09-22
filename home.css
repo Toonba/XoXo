@@ -67,8 +67,11 @@
   .comming-soon {
     height: 80vw;
     width: 100%;
-    transform: rotate(90deg);
+    
   }  
+  #countdown {
+    display: none;
+  }
 }
 
 #countdown {
