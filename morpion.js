@@ -361,7 +361,7 @@ function main() {
                 computerChoice = false;
                 afficheur.sendMessage("Computer turn!");
 
-                computerTurn(pions, iconejoueur[1], joueurs, choixAssets[1][2], computerChoice);
+                setTimeout(computerTurn, 750, pions, iconejoueur[1], joueurs, choixAssets[1][2], computerChoice);
                 jeuEstFini = rechercherVainqueur(pions, joueurs, tour);
 
                 if (jeuEstFini) {
@@ -373,7 +373,6 @@ function main() {
                     afficheur.sendMessage('Draw! <br/> <a href="morpion.html">Play again</a>');
                     return;
                 }
-
                 tour++;
                 tour = tour % 2;
                 afficheur.sendMessage("Player " + joueurs[tour] + " it's your turn!");
