@@ -1,103 +1,101 @@
 body {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  background-color: black;
-  background-image: url('0backgroundFINAL.png');
-  background-size: 100% 90%;
-  background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: black;
+    background-image: url("0backgroundFINAL.png");
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
 }
 
-  #Jeu {
+#Jeu {
     width: 35vw;
     height: 80%;
     position: absolute;
     top: 30%;
     left: 32%;
-  }
+}
 
-  span{
+span {
     display: none;
     width: 120%;
-    height:10%;
+    height: 10%;
     background-image: url("onePage/assets/barre-rouge.gif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 120% 300%;
-    position:absolute;
-  }
-  
-  #Jeu div {
-    display: flex;
-  }
+    position: absolute;
+}
 
-  button{
+#Jeu div {
+    display: flex;
+}
+
+button {
     color: transparent;
-  }
-  
-  .left{
+}
+
+.left {
     width: 25%;
     height: 17vh;
     background-color: transparent;
-    border: 2px solid white;
-  }
+    border: 2px solid transparent;
+}
 
-  .mid{
+.mid {
     width: 39%;
     height: 17vh;
     background-color: transparent;
-    border: 2px solid white;
-  }
+    border: 2px solid transparent;
+}
 
-  .right{
+.right {
     width: 30%;
     height: 17vh;
     background-color: transparent;
-    border: 2px solid white;
-  }
-  
-  #StatutJeu {
+    border: 2px solid transparent;
+}
+
+#StatutJeu {
     justify-content: center;
-    width:35vw;
+    width: 35vw;
     color: white;
     background-color: transparent;
     margin-top: 5vh;
-    font-size: 1,2em;
+    font-size: 1, 2em;
     text-align: center;
-  }
-  
+}
 
-  .croix{
+.croix {
     background-image: url("Xoxo_X_wobg.png");
     background-size: 75% 70%;
     background-repeat: no-repeat;
     background-position: center;
-  }
+}
 
-  .rond{
+.rond {
     background-image: url("Xoxo_0_wobg.png");
     background-size: 75% 70%;
     background-repeat: no-repeat;
     background-position: center;
-  }
+}
 
-
-  @media only screen and (min-device-width : 320px) and (max-device-width : 700px){
+@media only screen and (min-device-width: 320px) and (max-device-width: 700px) {
     body {
-      background-size: 200% 90%;
-      background-position: center;
+        background-size: 200% 90%;
+        background-position: center;
     }
-    #Jeu{
-      width: 65vw;
-      top:35%;
-      left:16%
+    #Jeu {
+        width: 65vw;
+        top: 35%;
+        left: 16%;
     }
-    #StatutJeu{
-      width: 65vw;
-      height: 5vh;
-      font-size: 2em;
+    #StatutJeu {
+        width: 65vw;
+        height: 5vh;
+        font-size: 2em;
     }
-    .mid{
-      width: 43%;
+    .mid {
+        width: 43%;
     }
-  }
+}
